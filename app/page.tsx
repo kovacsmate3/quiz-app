@@ -45,7 +45,9 @@ export default function QuizPage() {
   const total = order.length || QUESTIONS.length;
   const current = order[idx];
   const currentOptionsOrder = optionsOrder[idx] ?? [];
-  const correctShuffledIndex = currentOptionsOrder.indexOf(current?.correctIndex ?? -1);
+  const correctShuffledIndex = currentOptionsOrder.indexOf(
+    current?.correctIndex ?? -1,
+  );
 
   function startQuiz(count?: number) {
     const all = shuffle(QUESTIONS);
@@ -111,10 +113,25 @@ export default function QuizPage() {
           <div className="text-xs uppercase tracking-[0.25em] text-ink-200/70 font-mono mb-3">
             ELTE · IPM-22AUTASTE
           </div>
-          <h1 className="font-display text-5xl sm:text-6xl leading-[0.95] text-ink-50">
-            Haladó <em className="text-amber-accent not-italic font-display">szoftver-</em><br />
-            <em className="italic">technológia</em>
-          </h1>
+          {lang === "hu" ? (
+            <h1 className="font-display text-5xl sm:text-6xl leading-[0.95] text-ink-50">
+              Haladó{" "}
+              <em className="text-amber-accent not-italic font-display">
+                szoftver-
+              </em>
+              <br />
+              <em className="italic">technológia</em>
+            </h1>
+          ) : (
+            <h1 className="font-display text-5xl sm:text-6xl leading-[0.95] text-ink-50">
+              Advanced{" "}
+              <em className="text-amber-accent not-italic font-display">
+                Software
+              </em>
+              <br />
+              <em className="italic">Technology</em>
+            </h1>
+          )}
           <p className="mt-5 text-ink-200 text-base leading-relaxed">
             {t.intro}
           </p>
@@ -122,7 +139,10 @@ export default function QuizPage() {
           <div className="mt-7 grid grid-cols-2 gap-2 text-sm font-mono">
             <Stat label={t.stat_questions} value={String(QUESTIONS.length)} />
             <Stat label={t.stat_weeks} value="w38–w49" />
-            <Stat label={t.stat_best} value={bestScore !== null ? `${bestScore}%` : "—"} />
+            <Stat
+              label={t.stat_best}
+              value={bestScore !== null ? `${bestScore}%` : "—"}
+            />
             <Stat label={t.stat_lang} value={lang.toUpperCase()} />
           </div>
 
@@ -162,10 +182,13 @@ export default function QuizPage() {
   if (phase === "done") {
     const pct = Math.round((score / total) * 100);
     const grade =
-      pct >= 90 ? t.grade_excellent :
-      pct >= 70 ? t.grade_good :
-      pct >= 50 ? t.grade_ok :
-      t.grade_weak;
+      pct >= 90
+        ? t.grade_excellent
+        : pct >= 70
+          ? t.grade_good
+          : pct >= 50
+            ? t.grade_ok
+            : t.grade_weak;
     const wrongAnswers = answers.filter((a) => !a.correct);
 
     return (
@@ -186,16 +209,28 @@ export default function QuizPage() {
             </div>
             <div className="grid grid-cols-3 gap-3 text-center">
               <div>
-                <div className="text-2xl font-mono text-emerald-400">{score}</div>
-                <div className="text-[10px] uppercase tracking-wider text-ink-300/60 font-mono">{t.correct}</div>
+                <div className="text-2xl font-mono text-emerald-400">
+                  {score}
+                </div>
+                <div className="text-[10px] uppercase tracking-wider text-ink-300/60 font-mono">
+                  {t.correct}
+                </div>
               </div>
               <div>
-                <div className="text-2xl font-mono text-rose-400">{wrongCount}</div>
-                <div className="text-[10px] uppercase tracking-wider text-ink-300/60 font-mono">{t.wrong}</div>
+                <div className="text-2xl font-mono text-rose-400">
+                  {wrongCount}
+                </div>
+                <div className="text-[10px] uppercase tracking-wider text-ink-300/60 font-mono">
+                  {t.wrong}
+                </div>
               </div>
               <div>
-                <div className="text-2xl font-mono text-ink-100">{bestScore ?? pct}%</div>
-                <div className="text-[10px] uppercase tracking-wider text-ink-300/60 font-mono">{t.best}</div>
+                <div className="text-2xl font-mono text-ink-100">
+                  {bestScore ?? pct}%
+                </div>
+                <div className="text-[10px] uppercase tracking-wider text-ink-300/60 font-mono">
+                  {t.best}
+                </div>
               </div>
             </div>
           </div>
@@ -214,17 +249,23 @@ export default function QuizPage() {
                       className="border border-rose-500/20 bg-rose-500/5 rounded-lg p-3 text-sm"
                     >
                       <summary className="cursor-pointer text-ink-100 font-medium">
-                        <span className="font-mono text-xs text-rose-400/80 mr-2">{q.week}</span>
+                        <span className="font-mono text-xs text-rose-400/80 mr-2">
+                          {q.week}
+                        </span>
                         {q.question[lang]}
                       </summary>
                       <div className="mt-2 pt-2 border-t border-rose-500/10 space-y-1.5 text-xs">
                         <div>
                           <span className="text-rose-400 font-mono">✗ </span>
-                          <span className="text-ink-200">{q.options[lang][a.pickedIndex]}</span>
+                          <span className="text-ink-200">
+                            {q.options[lang][a.pickedIndex]}
+                          </span>
                         </div>
                         <div>
                           <span className="text-emerald-400 font-mono">✓ </span>
-                          <span className="text-ink-100 font-medium">{q.options[lang][q.correctIndex]}</span>
+                          <span className="text-ink-100 font-medium">
+                            {q.options[lang][q.correctIndex]}
+                          </span>
                         </div>
                         <div className="mt-2 text-ink-200/80 leading-relaxed">
                           {q.explanation[lang]}
@@ -278,7 +319,9 @@ export default function QuizPage() {
       <div className="h-1 bg-ink-300/10 rounded-full overflow-hidden mb-7">
         <div
           className="h-full bg-amber-accent transition-all duration-500 ease-out"
-          style={{ width: `${((idx + (phase === "review" ? 1 : 0)) / total) * 100}%` }}
+          style={{
+            width: `${((idx + (phase === "review" ? 1 : 0)) / total) * 100}%`,
+          }}
         />
       </div>
 
@@ -318,7 +361,8 @@ export default function QuizPage() {
                 cls = "border-emerald-400/60 bg-emerald-400/10 text-ink-50";
                 icon = "✓";
               } else if (isPicked && !isCorrect) {
-                cls = "border-rose-400/60 bg-rose-400/10 text-ink-200 animate-shake";
+                cls =
+                  "border-rose-400/60 bg-rose-400/10 text-ink-200 animate-shake";
                 icon = "✗";
               } else {
                 cls = "border-ink-200/10 text-ink-300/60";
@@ -368,10 +412,14 @@ export default function QuizPage() {
             <div className="flex items-baseline gap-2 mb-2">
               <span
                 className={`font-mono text-xs uppercase tracking-wider ${
-                  answers[answers.length - 1]?.correct ? "text-emerald-400" : "text-rose-400"
+                  answers[answers.length - 1]?.correct
+                    ? "text-emerald-400"
+                    : "text-rose-400"
                 }`}
               >
-                {answers[answers.length - 1]?.correct ? t.correct_label : t.wrong_label}
+                {answers[answers.length - 1]?.correct
+                  ? t.correct_label
+                  : t.wrong_label}
               </span>
               {!answers[answers.length - 1]?.correct && (
                 <span className="font-mono text-xs text-ink-300/60">
@@ -402,7 +450,9 @@ export default function QuizPage() {
 function Stat({ label, value }: { label: string; value: string }) {
   return (
     <div className="px-3 py-2 border border-ink-200/15 rounded-lg bg-navy-800/30">
-      <div className="text-[10px] uppercase tracking-wider text-ink-300/60">{label}</div>
+      <div className="text-[10px] uppercase tracking-wider text-ink-300/60">
+        {label}
+      </div>
       <div className="text-ink-100 mt-0.5">{value}</div>
     </div>
   );
