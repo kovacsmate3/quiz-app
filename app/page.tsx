@@ -138,7 +138,7 @@ export default function QuizPage() {
 
           <div className="mt-7 grid grid-cols-2 gap-2 text-sm font-mono">
             <Stat label={t.stat_questions} value={String(QUESTIONS.length)} />
-            <Stat label={t.stat_weeks} value="w38–w49" />
+            <Stat label={t.stat_weeks} value="w01, w38–w50" />
             <Stat
               label={t.stat_best}
               value={bestScore !== null ? `${bestScore}%` : "—"}
