@@ -4,7 +4,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Haladó Szoftvertechnológia — Kvíz",
   description:
-    "Felkészülő kvíz az ELTE Haladó Szoftvertechnológia (w38–w49) heti kérdéseiből. Random sorrend, élő pontszám, magyarázatokkal.",
+    "Felkészülő kvíz az ELTE Haladó Szoftvertechnológia (w01, w38–w50) heti kérdéseiből. Random sorrend, élő pontszám, magyarázatokkal.",
   appleWebApp: {
     capable: true,
     statusBarStyle: "black-translucent",

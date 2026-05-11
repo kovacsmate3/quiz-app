@@ -1,4 +1,4 @@
-// Az ELTE Haladó Szoftvertechnológia (w38–w49) heti kvízeinek kérdései.
+// Az ELTE Haladó Szoftvertechnológia (w01, w38–w50) heti kvízeinek kérdései.
 // A két "rejtett" helyes választ (w38_q2, w43_q2) az előadás-anyagok és a
 // practice quiz alapján rekonstruáltuk — ld. explanation mezők.
 
@@ -26,8 +26,18 @@ export const QUESTIONS: Question[] = [
       en: "What is needed to develop a remarkable product?",
     },
     options: {
-      hu: ["Python", "Megjelenés a cápák között", "Ügyfelekkel való beszélgetés", "Korlátlan tőke"],
-      en: ["Python", "Appearing on Shark Tank", "Talking to customers", "Unlimited capital"],
+      hu: [
+        "Python",
+        "Megjelenés a cápák között",
+        "Ügyfelekkel való beszélgetés",
+        "Korlátlan tőke",
+      ],
+      en: [
+        "Python",
+        "Appearing on Shark Tank",
+        "Talking to customers",
+        "Unlimited capital",
+      ],
     },
     correctIndex: 2,
     explanation: {
@@ -73,8 +83,18 @@ export const QUESTIONS: Question[] = [
       en: "Which of the following could cause a startup to fail?",
     },
     options: {
-      hu: ["Túl sok ügyfél", "Gyors végrehajtás", "A product-market fit hiánya", "Jó a hangulat a csapatban"],
-      en: ["Too many customers", "Fast execution", "Lack of product-market fit", "Good team atmosphere"],
+      hu: [
+        "Túl sok ügyfél",
+        "Gyors végrehajtás",
+        "A product-market fit hiánya",
+        "Jó a hangulat a csapatban",
+      ],
+      en: [
+        "Too many customers",
+        "Fast execution",
+        "Lack of product-market fit",
+        "Good team atmosphere",
+      ],
     },
     correctIndex: 2,
     explanation: {
@@ -151,7 +171,10 @@ export const QUESTIONS: Question[] = [
     id: "w40_q1",
     week: "w40",
     topic: { hu: "Vízesés modell", en: "Waterfall model" },
-    question: { hu: "Mi jellemzi a vízesés modellt?", en: "What characterizes the waterfall model?" },
+    question: {
+      hu: "Mi jellemzi a vízesés modellt?",
+      en: "What characterizes the waterfall model?",
+    },
     options: {
       hu: [
         "Alapos tervezéssel igyekszik minimalizálni a későbbi fázisok kockázatát.",
@@ -176,7 +199,10 @@ export const QUESTIONS: Question[] = [
     id: "w40_q2",
     week: "w40",
     topic: { hu: "Gyártósor analógia", en: "Assembly line analogy" },
-    question: { hu: "A gyártósor analógia arra vonatkozik, hogy ...", en: "The assembly line analogy refers to..." },
+    question: {
+      hu: "A gyártósor analógia arra vonatkozik, hogy ...",
+      en: "The assembly line analogy refers to...",
+    },
     options: {
       hu: [
         "könnyen reagálhatunk a változó követelményekre, hiszen a munkadarabot is bármikor vissza lehet küldeni a gyártósor elejére.",
@@ -201,7 +227,10 @@ export const QUESTIONS: Question[] = [
     id: "w40_q3",
     week: "w40",
     topic: { hu: "Extreme Programming", en: "Extreme Programming" },
-    question: { hu: "Az XP / Extreme Programming alapötlete, hogy", en: "The core idea of XP / Extreme Programming is that" },
+    question: {
+      hu: "Az XP / Extreme Programming alapötlete, hogy",
+      en: "The core idea of XP / Extreme Programming is that",
+    },
     options: {
       hu: [
         "mindent szénné tesztelünk.",
@@ -228,7 +257,10 @@ export const QUESTIONS: Question[] = [
     id: "w42_q1",
     week: "w42",
     topic: { hu: "Artifact Repository", en: "Artifact Repository" },
-    question: { hu: "Az Artifact Repository-ban", en: "In the Artifact Repository" },
+    question: {
+      hu: "Az Artifact Repository-ban",
+      en: "In the Artifact Repository",
+    },
     options: {
       hu: [
         "a build során fellépő, megmagyarázhatatlan anomáliákról tárolunk adatokat.",
@@ -281,7 +313,10 @@ export const QUESTIONS: Question[] = [
     id: "w42_q3",
     week: "w42",
     topic: { hu: "DevOps", en: "DevOps" },
-    question: { hu: "A DevOps a gyakorlatban azt jelenti, hogy", en: "In practice, DevOps means that" },
+    question: {
+      hu: "A DevOps a gyakorlatban azt jelenti, hogy",
+      en: "In practice, DevOps means that",
+    },
     options: {
       hu: [
         "a fejlesztők, tesztelők és rendszergazdák közötti határvonal elmosódik, mivel mindenki csinál dolgokat mindhárom terület feladatai közül.",
@@ -308,7 +343,10 @@ export const QUESTIONS: Question[] = [
     id: "w43_q1",
     week: "w43",
     topic: { hu: "Mélytanulás", en: "Deep learning" },
-    question: { hu: "A mélytanulás (deep learning) ...", en: "Deep learning is ..." },
+    question: {
+      hu: "A mélytanulás (deep learning) ...",
+      en: "Deep learning is ...",
+    },
     options: {
       hu: [
         "az emberi lélek mélységeinek gépi feltérképezése.",
@@ -389,7 +427,10 @@ export const QUESTIONS: Question[] = [
     id: "w45_q1",
     week: "w45",
     topic: { hu: "Liskov Substitution", en: "Liskov Substitution" },
-    question: { hu: "A Liskov-féle behelyettesítési elv szerint", en: "According to the Liskov Substitution Principle" },
+    question: {
+      hu: "A Liskov-féle behelyettesítési elv szerint",
+      en: "According to the Liskov Substitution Principle",
+    },
     options: {
       hu: [
         "az interfészektől való függőségeket közvetlen osztály-függőségekkel kell helyettesíteni.",
@@ -414,7 +455,10 @@ export const QUESTIONS: Question[] = [
     id: "w45_q2",
     week: "w45",
     topic: { hu: "Open/Closed Principle", en: "Open/Closed Principle" },
-    question: { hu: "Az Open/Closed Principle jelentése, hogy", en: "The Open/Closed Principle states that" },
+    question: {
+      hu: "Az Open/Closed Principle jelentése, hogy",
+      en: "The Open/Closed Principle states that",
+    },
     options: {
       hu: [
         "az osztály nyílt a módosításra, de zárt a kiterjesztésre.",
@@ -439,7 +483,10 @@ export const QUESTIONS: Question[] = [
     id: "w45_q3",
     week: "w45",
     topic: { hu: "Interface Segregation", en: "Interface Segregation" },
-    question: { hu: "Az interfész-szegregációs elv szerint", en: "According to the Interface Segregation Principle" },
+    question: {
+      hu: "Az interfész-szegregációs elv szerint",
+      en: "According to the Interface Segregation Principle",
+    },
     options: {
       hu: [
         "a nagy interfészeket érdemes egymástól függetlenebb kisebbekre szétbontani.",
@@ -466,7 +513,10 @@ export const QUESTIONS: Question[] = [
     id: "w46_q1",
     week: "w46",
     topic: { hu: "UML Use Case diagram", en: "UML Use Case diagram" },
-    question: { hu: "Az UML Use Case diagramja", en: "The UML Use Case diagram" },
+    question: {
+      hu: "Az UML Use Case diagramja",
+      en: "The UML Use Case diagram",
+    },
     options: {
       hu: [
         "funkcionális követelményeket mutat.",
@@ -490,7 +540,10 @@ export const QUESTIONS: Question[] = [
   {
     id: "w46_q2",
     week: "w46",
-    topic: { hu: "Osztály- vs. komponensdiagram", en: "Class vs. component diagram" },
+    topic: {
+      hu: "Osztály- vs. komponensdiagram",
+      en: "Class vs. component diagram",
+    },
     question: {
       hu: "Hogyan viszonyul egymáshoz az UML osztály- és komponensdiagramja?",
       en: "How do UML class and component diagrams relate?",
@@ -518,7 +571,10 @@ export const QUESTIONS: Question[] = [
   {
     id: "w46_q3",
     week: "w46",
-    topic: { hu: "State Machine vs. Activity", en: "State Machine vs. Activity" },
+    topic: {
+      hu: "State Machine vs. Activity",
+      en: "State Machine vs. Activity",
+    },
     question: {
       hu: "Mi a közös az UML State Machine és Activity diagramjai között?",
       en: "What is common between UML State Machine and Activity diagrams?",
@@ -549,7 +605,10 @@ export const QUESTIONS: Question[] = [
     id: "w47_q1",
     week: "w47",
     topic: { hu: "RAII", en: "RAII" },
-    question: { hu: "RAII használata esetén megakadályozzuk az", en: "Using RAII prevents" },
+    question: {
+      hu: "RAII használata esetén megakadályozzuk az",
+      en: "Using RAII prevents",
+    },
     options: {
       hu: [
         "erőforrások megfelelő lezárásának elmaradását.",
@@ -574,7 +633,10 @@ export const QUESTIONS: Question[] = [
     id: "w47_q2",
     week: "w47",
     topic: { hu: "Object Pool", en: "Object Pool" },
-    question: { hu: "Az Object Pool tervmintában", en: "In the Object Pool design pattern" },
+    question: {
+      hu: "Az Object Pool tervmintában",
+      en: "In the Object Pool design pattern",
+    },
     options: {
       hu: [
         "újrahasznosítunk objektumokat egy meglévő készletből, azokat többször is felhasználva.",
@@ -599,7 +661,10 @@ export const QUESTIONS: Question[] = [
     id: "w47_q3",
     week: "w47",
     topic: { hu: "Builder pattern", en: "Builder pattern" },
-    question: { hu: "A Builder pattern lényege, hogy", en: "The Builder pattern's essence is that" },
+    question: {
+      hu: "A Builder pattern lényege, hogy",
+      en: "The Builder pattern's essence is that",
+    },
     options: {
       hu: [
         "objektumok létrehozásánál sok paraméteres konstruáló művelet helyett egy gyártó objektumot állítunk be egyszerű setterekkel.",
@@ -687,8 +752,18 @@ export const QUESTIONS: Question[] = [
       en: "Which of the following are behavioral design patterns?",
     },
     options: {
-      hu: ["Composite, Decorator", "Command, State", "Prototype, Factory Method", "egyik sem"],
-      en: ["Composite, Decorator", "Command, State", "Prototype, Factory Method", "none of them"],
+      hu: [
+        "Composite, Decorator",
+        "Command, State",
+        "Prototype, Factory Method",
+        "egyik sem",
+      ],
+      en: [
+        "Composite, Decorator",
+        "Command, State",
+        "Prototype, Factory Method",
+        "none of them",
+      ],
     },
     correctIndex: 1,
     explanation: {
@@ -706,7 +781,10 @@ export const QUESTIONS: Question[] = [
       hu: "Undo funkcionalitást implementálsz az editorodban. Melyik tervminta jönne jól ehhez?",
       en: "You're implementing Undo in your editor. Which pattern would help?",
     },
-    options: { hu: ["RAII", "Bridge", "Memento", "Proxy"], en: ["RAII", "Bridge", "Memento", "Proxy"] },
+    options: {
+      hu: ["RAII", "Bridge", "Memento", "Proxy"],
+      en: ["RAII", "Bridge", "Memento", "Proxy"],
+    },
     correctIndex: 2,
     explanation: {
       hu: "A Memento egy 'pillanatfelvételt' (snapshot) készít az objektum belső állapotáról anélkül, hogy a kapszulázást megsértené. Undo-stack-be tett mementókat egyenként pop-olva visszaállíthatod az előző állapotokat. (Originator → készíti, Memento → tárolja, Caretaker → kezeli a stack-et.)",
@@ -717,7 +795,10 @@ export const QUESTIONS: Question[] = [
     id: "w49_q2",
     week: "w49",
     topic: { hu: "Concurrency patterns", en: "Concurrency patterns" },
-    question: { hu: "A Concurrency design patternek", en: "Concurrency design patterns" },
+    question: {
+      hu: "A Concurrency design patternek",
+      en: "Concurrency design patterns",
+    },
     options: {
       hu: [
         "memóriaelérési problémákkal foglalkoznak.",
@@ -742,7 +823,10 @@ export const QUESTIONS: Question[] = [
     id: "w49_q3",
     week: "w49",
     topic: { hu: "Active Object", en: "Active Object" },
-    question: { hu: "Az Active Object tervminta azt jelenti, hogy", en: "The Active Object pattern means" },
+    question: {
+      hu: "Az Active Object tervminta azt jelenti, hogy",
+      en: "The Active Object pattern means",
+    },
     options: {
       hu: [
         "függvényhívásszerű szemantikával indítunk párhuzamos folyamatot, ahol a következő szinkronizációs pont a függvény eredményének lekérdezése.",
@@ -761,6 +845,614 @@ export const QUESTIONS: Question[] = [
     explanation: {
       hu: "Active Object: a metódushívás aszinkron lesz — a hívás azonnal visszatér egy Future/Promise objektummal, a tényleges munka egy másik szálon fut. Szinkronizáció: amikor a Future-ön get()-et hívsz, az blokkol az eredményig. Ez van a JavaScript async/await, Java CompletableFuture, C++ std::async mögött.",
       en: "Active Object: method calls become async — they return immediately with a Future/Promise; actual work runs on another thread. Synchronization: calling get() on the Future blocks until ready. This is what powers JavaScript async/await, Java CompletableFuture, C++ std::async.",
+    },
+  },
+  // ────────── w01 — Szoftvertervezés alapok ──────────
+  {
+    id: "w01_q1",
+    week: "w01",
+    topic: { hu: "Szoftvertervezés alapok", en: "Software Engineering Basics" },
+    question: {
+      hu: "Melyik állítás tekinthető az esetek többségében igaznak a költségekkel kapcsolatban?",
+      en: "Which statement is generally considered true regarding costs?",
+    },
+    options: {
+      hu: [
+        "Egy rendszernek a hardver költségei nagyobbak, mint a szoftver költségei.",
+        "Egy rendszernek a szoftver költségei magasabbak, mint a hardver költségei.",
+        "A hardver és szoftver költségek mindig megegyeznek.",
+        "A szoftver költségek elhanyagolhatók a hardverhez képest.",
+      ],
+      en: [
+        "Hardware costs of a system are higher than software costs.",
+        "Software costs of a system are higher than hardware costs.",
+        "Hardware and software costs are always equal.",
+        "Software costs are negligible compared to hardware.",
+      ],
+    },
+    correctIndex: 1,
+    explanation: {
+      hu: "Napjainkban egy rendszer szoftverköltségei (fejlesztés, tesztelés, karbantartás) jellemzően jóval meghaladják a hardver költségeit.",
+      en: "Nowadays, the software costs of a system (development, testing, maintenance) typically far exceed the hardware costs.",
+    },
+  },
+  {
+    id: "w01_q2",
+    week: "w01",
+    topic: { hu: "Szoftvertervezés alapok", en: "Software Engineering Basics" },
+    question: {
+      hu: "Melyik állítás tekinthető az esetek többségében igaznak a karbantartásról?",
+      en: "Which statement is generally considered true regarding maintenance?",
+    },
+    options: {
+      hu: [
+        "Egy szoftver fejlesztési költségei magasabbak, mint a karbantartási költségei.",
+        "Egy szoftver karbantartási költségei magasabbak, mint a fejlesztési költségei.",
+        "A karbantartás ingyenes, ha jól írták meg a kódot.",
+        "A két költség általában megegyezik.",
+      ],
+      en: [
+        "Software development costs are higher than maintenance costs.",
+        "Software maintenance costs are higher than development costs.",
+        "Maintenance is free if the code is well written.",
+        "The two costs are generally equal.",
+      ],
+    },
+    correctIndex: 1,
+    explanation: {
+      hu: "A szoftverek életciklusa során a karbantartásra (hibajavítás, új funkciók, környezeti változások lekövetése) fordított idő és pénz általában többszöröse az eredeti fejlesztési költségnek.",
+      en: "Over a software lifecycle, time and money spent on maintenance (bug fixes, new features, adapting to environment changes) is usually several times the initial development cost.",
+    },
+  },
+  {
+    id: "w01_q3",
+    week: "w01",
+    topic: { hu: "Módszertanok", en: "Methodologies" },
+    question: {
+      hu: "Melyik a legjobb szoftvertervezési módszer?",
+      en: "Which is the best software design method?",
+    },
+    options: {
+      hu: [
+        "Agilis szoftverfejlesztés",
+        "V-modell",
+        "Iteratív és inkrementális módszer",
+        "Attól függ, miről van szó",
+      ],
+      en: [
+        "Agile software development",
+        "V-model",
+        "Iterative and incremental method",
+        "It depends on the context",
+      ],
+    },
+    correctIndex: 3,
+    explanation: {
+      hu: "Nincs 'ezüst golyó' (No Silver Bullet). A megfelelő módszertan mindig az adott projekt méretétől, a csapat tapasztalatától, a követelmények változékonyságától és a megrendelői környezettől függ.",
+      en: "There is no 'silver bullet'. The right methodology always depends on project size, team experience, requirement volatility, and the client environment.",
+    },
+  },
+
+  // ────────── w38 — Termékfejlesztés, Startup ──────────
+  {
+    id: "w38_q4",
+    week: "w38",
+    topic: { hu: "Startup probléma", en: "Startup Problem" },
+    question: {
+      hu: "Mi jellemzi azt a problémát, amire érdemes startupot alapítani?",
+      en: "What characterizes a problem worth founding a startup for?",
+    },
+    options: {
+      hu: [
+        "Az ötlet megoldását a barátok zseniálisnak tartják.",
+        "Új technológia szükséges a megoldásához.",
+        "A kedvenc technológiámat kell hozzá használni.",
+        "Rendkívül fájdalmas, és sok ember küzd vele.",
+      ],
+      en: [
+        "Friends think my solution idea is brilliant.",
+        "New technology is required to solve it.",
+        "I get to use my favorite technology.",
+        "It is extremely painful, and many people struggle with it.",
+      ],
+    },
+    correctIndex: 3,
+    explanation: {
+      hu: "Egy jó startup egy valós, nagy fájdalmat okozó ('hair on fire') problémát old meg, amellyel egy elég nagy célközönség küzd.",
+      en: "A good startup solves a real, highly painful ('hair on fire') problem that a sufficiently large target audience struggles with.",
+    },
+  },
+  {
+    id: "w38_q5",
+    week: "w38",
+    topic: { hu: "Innováció", en: "Innovation" },
+    question: {
+      hu: "Hogyan lehet megtalálni a jó innovációs ötleteket?",
+      en: "How can you find good innovation ideas?",
+    },
+    options: {
+      hu: [
+        "Keress egy nagy ipari vagy üzleti szektort, amelyik látszólag rosszul működik.",
+        "Startup versenyt lehet vele nyerni.",
+        "ChatGPT-vel kapcsolatos.",
+        "Barátok lelkesen támogatják.",
+      ],
+      en: [
+        "Find a large industrial or business sector that seems to work poorly.",
+        "You can win a startup competition with it.",
+        "It is related to ChatGPT.",
+        "Friends enthusiastically support it.",
+      ],
+    },
+    correctIndex: 0,
+    explanation: {
+      hu: "A diszruptív innovációk gyakran olyan meglévő, hagyományos iparágakból indulnak ki, amelyek elavult, nem hatékony folyamatokat használnak.",
+      en: "Disruptive innovations often originate in traditional industries that rely on outdated, inefficient processes.",
+    },
+  },
+  {
+    id: "w38_q6",
+    week: "w38",
+    topic: { hu: "Product-Market Fit", en: "Product-Market Fit" },
+    question: {
+      hu: "Mi a product-market fit definíciója?",
+      en: "What is the definition of product-market fit?",
+    },
+    options: {
+      hu: [
+        "A termék chatbot alapú, és több befektetővel tárgyalunk.",
+        "A termékkel startup versenyeket nyerünk, de ügyfelek még nincsenek.",
+        "A termék hatékonyan elégíti ki egy meghatározott vásárlói csoport igényeit, jelentős értéket teremtve és pozitív választ generálva.",
+        "Sikerült bekerülni a Y Combinator programjába.",
+      ],
+      en: [
+        "The product is chatbot-based and we are negotiating with investors.",
+        "We win startup competitions with the product, but have no customers yet.",
+        "The product effectively satisfies the needs of a specific group of customers, creating significant value and generating a positive response.",
+        "We managed to get into the Y Combinator program.",
+      ],
+    },
+    correctIndex: 2,
+    explanation: {
+      hu: "A PMF lényege, hogy a piac valóban akarja a termékedet. A befektetők, a technológia vagy a versenyeredmények nem garantálják a PMF-et; a fizető/visszatérő ügyfelek elégedettsége igen.",
+      en: "The essence of PMF is that the market truly wants your product. Investors, technology, or competition wins don't guarantee PMF; satisfied paying/returning customers do.",
+    },
+  },
+
+  // ────────── w39 — A/B tesztelés ──────────
+  {
+    id: "w39_q4",
+    week: "w39",
+    topic: { hu: "A/B Testing", en: "A/B Testing" },
+    question: {
+      hu: "Az A/B tesztelés ...",
+      en: "A/B testing is ...",
+    },
+    options: {
+      hu: [
+        "egy belső folyamat, amelyben a UX-es kollégák hozzáértését teszteljük.",
+        "során kártyákat mutatunk a felhasználónak és feljegyezzük a választásait.",
+        "alfa és béta tesztelés, a kiadás előtti két fázis.",
+        "során két különböző felhasználói hipotézis közül választunk a termékben implementált verziókból nyert adatok alapján.",
+      ],
+      en: [
+        "an internal process where we test UX colleagues' competence.",
+        "showing cards to users and recording their choices.",
+        "alpha and beta testing, two phases directly preceding release.",
+        "choosing between two user hypotheses by collecting data from different versions implemented in the product.",
+      ],
+    },
+    correctIndex: 3,
+    explanation: {
+      hu: "Az A/B tesztelés során az éles termék két (vagy több) variációját mutatjuk meg a felhasználóknak, és metrikák (pl. konverzió) alapján döntjük el, melyik a jobb.",
+      en: "During A/B testing, two (or more) live product variants are shown to users, and metrics (e.g., conversion) determine which performs better.",
+    },
+  },
+
+  // ────────── w40 — Agilis csapat ──────────
+  {
+    id: "w40_q4",
+    week: "w40",
+    topic: { hu: "Csapatstruktúra", en: "Team structure" },
+    question: {
+      hu: "Mit jelent a 'cross functional' / keresztfunkcionális csapat kifejezés?",
+      en: "What does the term 'cross functional' team mean?",
+    },
+    options: {
+      hu: [
+        "A csapatban olyan szakértők dolgoznak, akik ötvözik a funkcionális nyelveket más paradigmákkal.",
+        "A csapatban azonos szakterületről érkezett kollégák segítik egymást.",
+        "A csapatban különböző területek szakértői dolgoznak együtt egy közös célért.",
+        "A csapatban megvetik a funkcionális programozói tudással nem rendelkezőket.",
+      ],
+      en: [
+        "The team consists of experts combining functional languages with other paradigms.",
+        "The team consists of colleagues from the same field helping each other.",
+        "Experts from different fields work together toward a common goal.",
+        "The team despises those without functional programming knowledge.",
+      ],
+    },
+    correctIndex: 2,
+    explanation: {
+      hu: "Az agilis (Scrum) keresztfunkcionális csapatai önállóak és rendelkeznek minden szükséges kompetenciával (pl. fejlesztő, tesztelő, dizájner, elemző), így nem kell külső részlegekre várniuk.",
+      en: "Agile (Scrum) cross-functional teams are self-sufficient and include all competencies needed to deliver (e.g., dev, QA, design, analysis), without waiting for external departments.",
+    },
+  },
+
+  // ────────── w41 — Architektúra ──────────
+  {
+    id: "w41_q1",
+    week: "w41",
+    topic: { hu: "Architektúra tervezés", en: "Architecture design" },
+    question: {
+      hu: "Az architektúra tervezés kapcsolatot teremt ...",
+      en: "Architecture design establishes a connection between ...",
+    },
+    options: {
+      hu: [
+        "a szoftverkövetelmények felmérése és a szoftver tervezése között",
+        "a szoftveresek és az építészek között",
+        "a szoftver tervezői és a menedzsment között",
+        "a frontend és a backend fejlesztők között",
+      ],
+      en: [
+        "software requirements assessment and software design",
+        "software engineers and architects",
+        "software designers and management",
+        "frontend and backend developers",
+      ],
+    },
+    correctIndex: 0,
+    explanation: {
+      hu: "Az architekturális tervezés az a híd, amely a magas szintű követelményeket (mit kell csinálnia a rendszernek) a tényleges szerkezeti tervre fordítja le (hogyan építjük fel).",
+      en: "Architectural design is the bridge that translates high-level requirements (what the system should do) into structural design (how to build it).",
+    },
+  },
+
+  // ────────── w42 — Continuous Integration ──────────
+  {
+    id: "w42_q4",
+    week: "w42",
+    topic: { hu: "Continuous Integration", en: "Continuous Integration" },
+    question: {
+      hu: "A folyamatos integráció (Continuous Integration) mint módszer lényege, hogy",
+      en: "The essence of Continuous Integration (CI) is that",
+    },
+    options: {
+      hu: [
+        "a fő fejlesztési ágból sosem adunk ki szoftvert, csak release ágakból.",
+        "számos fejlesztési ágba szervezzük a munkát, és csak havonta integrálunk.",
+        "a fejlesztést kisebb lépésekben végezzük, és a változásokat folyamatosan a főágba integráljuk, így a szoftver folyamatosan közel kiadásra kész marad.",
+        "az új kollégákat fokozatosan integráljuk a csapatba.",
+      ],
+      en: [
+        "we never release software from the main branch, only from release branches.",
+        "we organize work into many branches and integrate only monthly.",
+        "we develop in small steps and continuously integrate changes into main, keeping a tested version nearly ready for release.",
+        "we integrate new colleagues gradually into the team.",
+      ],
+    },
+    correctIndex: 2,
+    explanation: {
+      hu: "A CI elve: a fejlesztők gyakran commitolnak a közös kódbázisba, amit automata build és tesztelés ellenőriz. Ezzel megelőzhető az 'integration hell'.",
+      en: "CI principle: developers commit frequently to a shared codebase, continuously validated by automated builds and tests. This prevents 'integration hell'.",
+    },
+  },
+  {
+    id: "w42_q5",
+    week: "w42",
+    topic: { hu: "Code Coverage", en: "Code Coverage" },
+    question: {
+      hu: "Azért kell a build során magas code coverage arányra törekednünk, mert",
+      en: "We should aim for high code coverage during builds because",
+    },
+    options: {
+      hu: [
+        "így biztosítjuk, hogy a commit fejlesztőjét van, aki helyettesíteni tudná.",
+        "így gyorsíthatjuk a buildet és ezzel spórolunk.",
+        "így minimalizáljuk a build során detektált hibák számát.",
+        "így maximalizáljuk a letesztelt kód mennyiségét.",
+      ],
+      en: [
+        "it ensures the commit author has a substitute.",
+        "it speeds up the build and saves money.",
+        "it minimizes the number of bugs detected during build.",
+        "it maximizes the amount of tested code.",
+      ],
+    },
+    correctIndex: 3,
+    explanation: {
+      hu: "A code coverage azt méri, hogy az automata tesztek a forráskód mekkora részét futtatták. A magas lefedettség önmagában nem garantál hibamentességet, de növeli az ellenőrzött logika arányát.",
+      en: "Code coverage measures how much of the source code is executed by automated tests. High coverage alone does not guarantee correctness, but it increases the proportion of verified logic.",
+    },
+  },
+
+  // ────────── w44 — Keretrendszerek ──────────
+  {
+    id: "w44_q1",
+    week: "w44",
+    topic: { hu: "Keretrendszerek", en: "Frameworks" },
+    question: {
+      hu: "Melyik állítás helyes az alkalmazási keretrendszerek és a termékcsaládok viszonyáról?",
+      en: "Which statement is correct about the relationship between application frameworks and product families?",
+    },
+    options: {
+      hu: [
+        "Szoftver termékcsaládot érdemes alkalmazási keretrendszerre fejleszteni.",
+        "Keretrendszerrel készített alkalmazásokat érdemes szoftver termékcsaláddá fejleszteni.",
+        "A kettő kizárja egymást egy projekten belül.",
+        "Az alkalmazási keretrendszerek csak egyedi, egyszer használatos szoftverekhez valók.",
+      ],
+      en: [
+        "It is worth developing a software product family on an application framework.",
+        "Applications built using a framework should be developed into a software product family.",
+        "The two are mutually exclusive within a project.",
+        "Application frameworks are only for unique, single-use software.",
+      ],
+    },
+    correctIndex: 1,
+    explanation: {
+      hu: "A keretrendszerek technikai alapot adnak. Ha egy doménben keretrendszerrel több alkalmazást készítünk, a felhalmozott üzleti logika mentén érdemes termékcsaláddá fejleszteni őket az újrahasznosítás maximalizálásához.",
+      en: "Frameworks provide the technical foundation. If multiple apps are built in one domain, accumulated business logic can be evolved into a product family to maximize reuse.",
+    },
+  },
+  {
+    id: "w44_q2",
+    week: "w44",
+    topic: { hu: "Termékcsaládok", en: "Product Families" },
+    question: {
+      hu: "Termékcsalád esetén az ügyféligényekhez igazított példány előállítása tipikusan hogyan történik?",
+      en: "In a software product family, how is a client-tailored instance typically produced?",
+    },
+    options: {
+      hu: [
+        "A meglévő variabilitási pontok konfigurálásával, és az ügyféllel egyeztetett kompromisszumok mentén.",
+        "A rendszer forráskódját minden ügyfélnél alapjaiban újraírjuk, hogy pontosan minden egyedi igény teljesüljön.",
+        "Az ügyféligényeket nem vesszük figyelembe, mindenki ugyanazt a fix példányt kapja.",
+        "A testreszabás kizárólag az infrastruktúra (pl. cloud) cseréjével történik.",
+      ],
+      en: [
+        "By configuring existing variability points and negotiating trade-offs with the client.",
+        "By fundamentally rewriting the source code for each client to satisfy every custom request exactly.",
+        "Client needs are ignored; everyone gets the same fixed instance.",
+        "Customization is achieved solely by changing infrastructure (e.g., cloud platform).",
+      ],
+    },
+    correctIndex: 0,
+    explanation: {
+      hu: "A termékcsalád (SPL) lényege az újrahasznosítás és a variabilitás kezelése. A testreszabás fő eszköze a konfiguráció és az előre tervezett variációs pontok használata, nem az ügyfelenkénti teljes újraírás.",
+      en: "The essence of SPL is reuse with managed variability. Customization is primarily done through configuration and planned variation points, not full per-client rewrites.",
+    },
+  },
+  {
+    id: "w40_q6",
+    week: "w40",
+    topic: { hu: "Kanban metrikák", en: "Kanban metrics" },
+    question: {
+      hu: "A Kanban az idő és scope projektmetrikák szempontjából leginkább úgy írható le, hogy",
+      en: "Regarding time and scope project metrics, Kanban is best described as",
+    },
+    options: {
+      hu: [
+        "Fix sprintidővel dolgozik, és a sprint végére vállalt scope a fő tervezési egység.",
+        "A folyamatos áramlást optimalizálja: WIP limitekkel csökkenti az átfutási időt (lead/cycle time).",
+        "A scope-ot mindig teljesen fixálja, és minden más metrikát ennek rendel alá.",
+        "Elsősorban a fejlesztők bérezési modelljét határozza meg.",
+      ],
+      en: [
+        "It uses fixed sprint timeboxes, with sprint scope as the main planning unit.",
+        "It optimizes continuous flow: using WIP limits to reduce lead/cycle time.",
+        "It always fully fixes scope and subordinates all other metrics to it.",
+        "It primarily defines developer compensation models.",
+      ],
+    },
+    correctIndex: 1,
+    explanation: {
+      hu: "A Kanban központi célja a flow optimalizálása és az átfutási idők csökkentése WIP limitálással és folyamatos húzásos munkaszervezéssel. A fix idődoboz inkább Scrum-jellemző.",
+      en: "Kanban's core goal is flow optimization and shorter lead/cycle times via WIP limits and pull-based continuous work. Fixed timeboxes are more characteristic of Scrum.",
+    },
+  },
+  {
+    id: "w47_q4",
+    week: "w47",
+    topic: { hu: "Tervminták lényege", en: "Essence of Design Patterns" },
+    question: {
+      hu: "A Design Pattern / tervminták lényege, hogy",
+      en: "The essence of Design Patterns is to",
+    },
+    options: {
+      hu: [
+        "gyakori szoftvertervezési problémákra nyelvfüggetlen, bevált megoldásvázlatokat és közös nevezéktant adjanak.",
+        "gyakori problémákra konkrét, nyelvfüggő kész implementációt adjanak.",
+        "kizárólag algoritmikus optimalizálási feladatokat oldjanak meg.",
+        "csak UML diagramok rajzolására szolgáljanak.",
+      ],
+      en: [
+        "provide language-agnostic, proven solution templates and shared vocabulary for recurring software design problems.",
+        "provide concrete, language-specific ready-made implementations for common problems.",
+        "solve only algorithmic optimization tasks.",
+        "serve only for drawing UML diagrams.",
+      ],
+    },
+    correctIndex: 0,
+    explanation: {
+      hu: "A GoF tervminták nem kész kódok, hanem újrahasznosítható tervezési mintázatok. Nagy előnyük az egységes szakmai szótár (pl. Facade, Strategy, Observer), amely gyorsítja a kommunikációt és a tervezést.",
+      en: "GoF patterns are not ready-made code, but reusable design templates. A major benefit is shared professional vocabulary (e.g., Facade, Strategy, Observer), which speeds up communication and design.",
+    },
+  },
+  // ────────── UX (Kép 2) ──────────
+  {
+    id: "w39_q5",
+    week: "w39",
+    topic: { hu: "UX Persona célja", en: "UX Persona purpose" },
+    question: {
+      hu: "A UX Personá(ka)t arra használjuk, hogy",
+      en: "We use UX Persona(s) to",
+    },
+    options: {
+      hu: [
+        "specifikációt adjon a fejlesztők számára a termék vizuális és használhatósági követelményeinek tekintetében.",
+        "minőségbiztosítson minden olyan folyamatot, melyben UX-alapú megfontolások is szükségesek.",
+        "konferenciákon prezentáljuk mutatva, hogy a cégünk mennyire figyel a felhasználói élményre.",
+        "nem UX-es kollégák számára átélhetőbbé, megfoghatóbbá tegye a felhasználóink egy csoportját.",
+      ],
+      en: [
+        "provide developers with a specification regarding the product's visual and usability requirements.",
+        "quality assure any process that requires UX-based considerations.",
+        "present at conferences to show how much our company cares about user experience.",
+        "make a user group more tangible and relatable for non-UX colleagues.",
+      ],
+    },
+    correctIndex: 3,
+    explanation: {
+      hu: "A persona célja az empátia építése a fejlesztők és más, nem UX fókuszú csapattagok körében. Segít, hogy 'élő', emberi képük legyen a végfelhasználóról a száraz adatok vagy absztrakt követelmények helyett. (A Canvas képen a specifikációs válasz be volt jelölve, de az 0 pontos, azaz Helytelen!)",
+      en: "The purpose of a persona is to build empathy among developers and other non-UX team members. It helps them have a 'living', human picture of the end-user instead of dry data or abstract requirements. (Note: on the Canvas screenshot, the specification answer was marked, but it was scored 0, i.e., Incorrect!)",
+    },
+  },
+
+  // ────────── Agilis módszertanok (Kép 3, 4) ──────────
+  {
+    id: "w40_q8",
+    week: "w40",
+    topic: { hu: "Agilis keretrendszerek", en: "Agile frameworks" },
+    question: {
+      hu: "Melyik felsorolt fejlesztési módszertanok számítanak agilisnek?",
+      en: "Which of the listed development methodologies are considered agile?",
+    },
+    options: {
+      hu: [
+        "Chaos model",
+        "Bármelyik lehet az, csak kivitelezés és jó menedzsment kérdése",
+        "Spiral, Waterfall, V-model",
+        "Kanban, XP, Scrum",
+      ],
+      en: [
+        "Chaos model",
+        "Any of them can be, it's just a matter of execution and good management",
+        "Spiral, Waterfall, V-model",
+        "Kanban, XP, Scrum",
+      ],
+    },
+    correctIndex: 3,
+    explanation: {
+      hu: "A Kanban, az eXtreme Programming (XP) és a Scrum mind az agilis szoftverfejlesztés legismertebb és leggyakrabban használt módszertanai/keretrendszerei. A Waterfall és V-modell tradicionális, nehézsúlyú modellek.",
+      en: "Kanban, eXtreme Programming (XP), and Scrum are the best-known and most widely used methodologies/frameworks of agile software development. Waterfall and V-model are traditional, heavyweight models.",
+    },
+  },
+  {
+    id: "w40_q9",
+    week: "w40",
+    topic: { hu: "Sprint Backlog", en: "Sprint Backlog" },
+    question: {
+      hu: "Melyik állítás igaz a Sprint Backlogra?",
+      en: "Which statement is true about the Sprint Backlog?",
+    },
+    options: {
+      hu: [
+        "A felhasználók hibajelentéseiből áll össze valamilyen ticketing rendszerben.",
+        "A release manager állítja össze a sikeres kiadások listája alapján.",
+        "A termékmenedzser állítja össze az ügyfél- / felhasználói igények alapján.",
+        "A fejlesztők állítják össze a felmerült feladatok és problémák felmérése, lebontása alapján.",
+      ],
+      en: [
+        "It consists of user bug reports in a ticketing system.",
+        "The release manager compiles it based on the list of successful releases.",
+        "The Product Owner compiles it based on client/user needs.",
+        "The developers compile it based on the assessment and breakdown of emerging tasks and problems.",
+      ],
+    },
+    correctIndex: 3,
+    explanation: {
+      hu: "Míg a *Product Backlogot* a Product Owner (termékmenedzser) kezeli, a *Sprint Backlogot* a fejlesztőcsapat (Developers) hozza létre a Sprint Planning során, amikor a kiválasztott elemeket kisebb technikai feladatokra (taskokra) bontják. Ez az ő munkatervük a sprintre.",
+      en: "While the *Product Backlog* is managed by the Product Owner, the *Sprint Backlog* is created by the Developers during Sprint Planning, breaking down selected items into smaller technical tasks. It is their work plan for the sprint.",
+    },
+  },
+  {
+    id: "w40_q10",
+    week: "w40",
+    topic: { hu: "Scrum metrikák", en: "Scrum metrics" },
+    question: {
+      hu: "A Scrum az idő és scope (elvégzendő feladatok) projektmetrikák tekintetében",
+      en: "Regarding the project metrics of time and scope, Scrum",
+    },
+    options: {
+      hu: [
+        "a scope-ot veszi fix, adottnak és az időt minimalizálja, hiszen arra törekszik, hogy adott mennyiségű feladatot a lehető legrövidebb idő alatt tudjuk lefejleszteni.",
+        "a scope-ot maximalizálja, az időt minimalizálja, hiszen ez a konstelláció vezet a legjobb eredmény eléréséhez.",
+        "időalapon biztosítja a fejlesztők bérezését.",
+        "a scope-ot maximalizálja és az időt veszi fix, megadott paraméterként, hiszen a sprint végére mindenképpen demózható eredmény az elvárás még akkor is, ha esetleg kevesebb dolgot sikerült lefejleszteni.",
+      ],
+      en: [
+        "takes scope as fixed and minimizes time, aiming to develop a given amount of tasks in the shortest possible time.",
+        "maximizes scope and minimizes time, as this constellation leads to the best results.",
+        "ensures developer compensation on a time basis.",
+        "maximizes scope and takes time as a fixed, specified parameter, since a demonstrable result is expected by the end of the sprint even if fewer things were developed.",
+      ],
+    },
+    correctIndex: 3,
+    explanation: {
+      hu: "A Scrumban a Sprint ideje szigorúan fix (timeboxed, pl. 2 hét). Ha a csapat nem végez mindennel, a sprintet nem hosszabbítják meg, hanem a scope csökken (a be nem fejezett feladatok nem kerülnek be az elkészült inkrementumba). A Kanban ezzel szemben a scope-ot (egy taskot) fixál, és annak átfutási idejét minimalizálja.",
+      en: "In Scrum, the Sprint time is strictly fixed (timeboxed, e.g., 2 weeks). If the team doesn't finish everything, the sprint is not extended; instead, the scope is reduced (unfinished tasks don't make it into the increment). Kanban, conversely, fixes the scope (a task) and minimizes its cycle time.",
+    },
+  },
+
+  // ────────── Szoftvertervezés Elvek (Kép 7) ──────────
+  {
+    id: "w45_q4",
+    week: "w45",
+    topic: { hu: "Osztálynormalizáció", en: "Class Normalization" },
+    question: {
+      hu: "Az osztálynormalizáció során",
+      en: "During class normalization",
+    },
+    options: {
+      hu: [
+        "az objektumaink adatait normalizált sémájú relációs adatbázisban tároljuk.",
+        "az osztályaink nevét változtatjuk meg, hogy kifejezőbbek legyenek.",
+        "a hibásan működő osztályokat elimináljuk az osztálymodellünkből.",
+        "az osztályainkat refaktoráljuk, hogy egyes normálformák szabályainak megfeleljenek.",
+      ],
+      en: [
+        "we store our objects' data in a relational database with a normalized schema.",
+        "we change the names of our classes to make them more expressive.",
+        "we eliminate malfunctioning classes from our class model.",
+        "we refactor our classes to conform to the rules of certain normal forms.",
+      ],
+    },
+    correctIndex: 3,
+    explanation: {
+      hu: "Hasonlóan az adatbázisok normalizálásához, az objektumorientált tervezésben (Ambler-féle osztálynormalizáció) az a cél, hogy az osztályaink redundanciamentesek, jól fókuszáltak (magas kohéziójúak) legyenek, és ehhez normálformák (pl. 1ONF, 2ONF) szabályai szerint refaktoráljuk a kódot.",
+      en: "Similar to database normalization, in object-oriented design (Ambler's class normalization), the goal is to make classes redundancy-free and well-focused (high cohesion) by refactoring the code according to the rules of normal forms (e.g., 1ONF, 2ONF).",
+    },
+  },
+
+  // ────────── UML (Kép 8) ──────────
+  {
+    id: "w46_q22",
+    week: "w46",
+    topic: { hu: "UML Osztálydiagram", en: "UML Class Diagram" },
+    question: {
+      hu: "Az UML osztálydiagram egy",
+      en: "The UML class diagram is a",
+    },
+    options: {
+      hu: [
+        "a rendszer dinamikus viselkedését mutató diagram, mivel a csak futási idejű kapcsolatokat mutatja.",
+        "folyamatábra, melyen a program főbb elemeinek és döntési pontjainak működése látszik.",
+        "osztályok klaszterizációját mutató diagram, melyet a ChatGPT is tud generálni.",
+        "az architektúra statikus felépítését mutató diagram, mivel a fordítási időben is létező osztályok kapcsolatait mutatja.",
+      ],
+      en: [
+        "diagram showing the dynamic behavior of the system, as it shows only runtime relationships.",
+        "flowchart showing the operation of the main elements and decision points of the program.",
+        "diagram showing the clustering of classes, which can also be generated by ChatGPT.",
+        "diagram showing the static structure of the architecture, as it shows the relationships of classes existing at compile time.",
+      ],
+    },
+    correctIndex: 3,
+    explanation: {
+      hu: "Az UML osztálydiagram egy strukturális, azaz statikus diagram. A rendszer felépítését ábrázolja (osztályok, attribútumok, operációk és viszonyok) úgy, ahogy azok a kódban, fordítási időben definiálva vannak. A futásidejű állapotokat és folyamatokat dinamikus diagramok (pl. Sequence, State, Activity) írják le.",
+      en: "The UML class diagram is a structural, meaning static, diagram. It depicts the system's architecture (classes, attributes, operations, and relationships) as they are defined in code at compile time. Runtime states and processes are described by dynamic diagrams (e.g., Sequence, State, Activity).",
     },
   },
 ];
